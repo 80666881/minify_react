@@ -289,7 +289,6 @@ function reconcileChildren(wipFiber, elements) {
     index++
 
   }
-  debugger
 }
 
 const Didact = {
@@ -299,6 +298,7 @@ const Didact = {
 }
 
 function useState(initial) {
+  console.log('initial: ', initial);
   const oldHook =
     wipFiber.alternate &&
     wipFiber.alternate.hooks &&
@@ -313,7 +313,9 @@ function useState(initial) {
     hook.state = action(hook.state)
   })
 
+
   const setState = action => {
+    console.log('action: ', action);
     hook.queue.push(action)
     wipRoot = {
       dom: currentRoot.dom,

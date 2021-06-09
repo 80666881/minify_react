@@ -52,9 +52,11 @@ const resolveModule = (resolveFn, filePath) => {
 
 
 /* 入口 */
-// const entry = 'src/ownReact/7'
+const entry = 'src/ownReact/7'
 // const entry = 'src/originIndex'
-const entry = 'src/index'
+// const entry = 'src/index'
+// const entry = 'src/test/5.js'
+
 
 
 

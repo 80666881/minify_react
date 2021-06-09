@@ -8,9 +8,6 @@ and the children come from running the function instead of getting them directly
 
 */
 function createElement(type, props, ...children) {
-  console.log('children: ', children);
-  console.log('props: ', props);
-  console.log('type: ', type);
   return {
     type,
     props: {

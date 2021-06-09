@@ -175,6 +175,7 @@ function workLoop(deadline) {
 requestIdleCallback(workLoop)
 
 function performUnitOfWork(fiber) {
+  console.log('fiber: ', fiber);
   if (!fiber.dom) {
     fiber.dom = createDom(fiber)
   }
@@ -283,6 +284,7 @@ const rerender = value => {
 }
 
 rerender("World")
+
 
 
 
